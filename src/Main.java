@@ -1,10 +1,13 @@
-public class Main {
+    public class Main {
     public static void main(String[] args) {
         task1();
         task2();
         task3();
         task4();
         task5();
+        task6();
+        task7();
+        task8();
     }
     public static void task1 () {
         System.out.println("Задача1");
@@ -63,13 +66,49 @@ public class Main {
     }
     public static void task5 () {
         System.out.println("Задача5");
-        int numberOfPaintCansForAllSchoolClasses = 120;
         byte numberOfWhitePaintCansForOneClass = 2;
         byte numberOfBrownPaintCansForOneClass = 4;
-        byte totalNumberOfPaintCansForOneClass = (byte) (numberOfWhitePaintCansForOneClass + numberOfBrownPaintCansForOneClass);
+        int totalNumberOfPaintCansForOneClass = (numberOfWhitePaintCansForOneClass +
+                numberOfBrownPaintCansForOneClass);
+        int numberOfPaintCansForAllSchoolClasses = 120;
         int numberOfSchoolClasses = numberOfPaintCansForAllSchoolClasses / totalNumberOfPaintCansForOneClass;
         int numberOfWhitePaintCansForAllSchoolClasses = numberOfSchoolClasses * numberOfWhitePaintCansForOneClass;
         int numberOfBrownPaintCansForAllSchoolClasses = numberOfSchoolClasses * numberOfBrownPaintCansForOneClass;
-        System.out.println("В школе, где " + numberOfSchoolClasses + " классов, нужно " + numberOfWhitePaintCansForAllSchoolClasses + " банок белой краски и " + numberOfBrownPaintCansForAllSchoolClasses + " банок коричневой краски");
+        System.out.println("В школе, где " + numberOfSchoolClasses + " классов, нужно "
+                + numberOfWhitePaintCansForAllSchoolClasses + " банок белой краски и "
+                + numberOfBrownPaintCansForAllSchoolClasses + " банок коричневой краски");
+    }
+    public static void task6 () {
+        System.out.println("Задача6");
+        byte oneBananaWeiht = 80;
+        byte milk100MlWeight = 105;
+        byte onePieceOfIceCreamWeight = 100;
+        byte oneEggWeight = 70;
+        short bananasInRecipeWeight = (short) (oneBananaWeiht * 5);
+        short milkInRecipeWeight = (short) (milk100MlWeight * 2);
+        short iceCreamInRecipeWeight = (short) (onePieceOfIceCreamWeight * 2);
+        short eggsInRecipeWeight = (short) (oneEggWeight * 4);
+        float sportCocktailWeightGr = (bananasInRecipeWeight + milkInRecipeWeight + iceCreamInRecipeWeight +
+                eggsInRecipeWeight);
+        System.out.println("Вес завтрака составляет " + sportCocktailWeightGr + " грамм");
+        float sportCocktailWeightKg = sportCocktailWeightGr / 1000F;
+        System.out.println("Вес завтрака составляет " + sportCocktailWeightKg + " килограмм");
+    }
+    public static void task7 () {
+        System.out.println("Задача7");
+        byte plannedWeightLess = 7;
+        short plannedWeightLessGr = (short) (plannedWeightLess * 1000);
+        short dayWeightLessDiet1 = 250;
+        short dayWeightLessDiet2 = 500;
+        short numderDaysForWeightLessDiet1 = (short) (plannedWeightLessGr / dayWeightLessDiet1);
+        System.out.println("С диетой 1 для похудения на 7 кг понадобиться " + numderDaysForWeightLessDiet1 + " дней");
+        short numderDaysForWeightLessDiet2 = (short) (plannedWeightLessGr / dayWeightLessDiet2);
+        System.out.println("С диетой 2 для похудения на 7 кг понадобиться " + numderDaysForWeightLessDiet2 + " дней");
+        short averageNumberDaysWeightLess = (short) ((numderDaysForWeightLessDiet1 + numderDaysForWeightLessDiet2) / 2);
+        System.out.println("В среднем для похудения на 7 кг понадобиться " + averageNumberDaysWeightLess + " день");
+    }
+    public static void task8 () {
+        System.out.println("Задача8");
+
     }
 }
