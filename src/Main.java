@@ -109,6 +109,31 @@
     }
     public static void task8 () {
         System.out.println("Задача8");
-
+        byte monthsInAYear = 12;
+        int monthlyIncomeMashaPresent = 67760;
+        int monthlyIncomeDenisPresent = 83690;
+        int monthlyIncomeCristinaPresent = 76230;
+        int annualIncomeMashaPresent = monthlyIncomeMashaPresent * monthsInAYear;
+        int annualIncomeDenisPresent = monthlyIncomeDenisPresent * monthsInAYear;
+        int annualIncomeCristinaPresent = monthlyIncomeCristinaPresent * monthsInAYear;
+        float monthlyIncomeMashaPresent1Percent = monthlyIncomeMashaPresent / 100f;
+        float monthlyIncomeMashaIncrease10Percent = monthlyIncomeMashaPresent1Percent * 110f;
+        float monthlyIncomeDenisPresent1Percent = monthlyIncomeDenisPresent / 100f;
+        float monthlyIncomeDenisIncrease10Percent = monthlyIncomeDenisPresent1Percent * 110f;
+        float monthlyIncomeCristinaPresent1Percent = monthlyIncomeCristinaPresent / 100f;
+        float monthlyIncomeCristinaIncrease10Percent = monthlyIncomeCristinaPresent1Percent * 110f;
+        float annualIncomeMashaAfterIncreasing = monthlyIncomeMashaIncrease10Percent * monthsInAYear;
+        float annualIncomeDenisAfterIncreasing = monthlyIncomeDenisIncrease10Percent * monthsInAYear;
+        float annualIncomeCristinaAfterIncreasing = monthlyIncomeCristinaIncrease10Percent * monthsInAYear;
+        float annualIncomeDifferenceMashaAfterIncreasing = annualIncomeMashaAfterIncreasing % annualIncomeMashaPresent;
+        float annualIncomeDifferenceDenisAfterIncreasing = annualIncomeDenisAfterIncreasing % annualIncomeDenisPresent;
+        float annualIncomeDifferenceCristinaAfterIncreasing = annualIncomeCristinaAfterIncreasing %
+                annualIncomeCristinaPresent;
+        System.out.println("Маша теперь получает " + monthlyIncomeMashaIncrease10Percent +
+                " рублей в месяц. Годовой доход вырос на " + annualIncomeDifferenceMashaAfterIncreasing + " рублей");
+        System.out.println("Денис теперь получает " + monthlyIncomeDenisIncrease10Percent +
+                " рублей в месяц. Годовой доход вырос на " + annualIncomeDifferenceDenisAfterIncreasing + " рублей");
+        System.out.println("Кристина теперь получает " + monthlyIncomeCristinaIncrease10Percent +
+                " рублей в месяц. Годовой доход вырос на " + annualIncomeDifferenceCristinaAfterIncreasing + " рублей");
     }
 }
