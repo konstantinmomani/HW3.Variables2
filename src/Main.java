@@ -130,10 +130,10 @@
         float annualIncomeDifferenceCristinaAfterIncreasing = annualIncomeCristinaAfterIncreasing %
                 annualIncomeCristinaPresent;
         System.out.println("Маша теперь получает " + monthlyIncomeMashaIncrease10Percent +
-                " рублей в месяц. Годовой доход вырос на " + annualIncomeDifferenceMashaAfterIncreasing + " рублей");
+                " рублей в месяц. Годовой доход вырос на " + annualIncomeDifferenceMashaAfterIncreasing + " рублей!");
         System.out.println("Денис теперь получает " + monthlyIncomeDenisIncrease10Percent +
-                " рублей в месяц. Годовой доход вырос на " + annualIncomeDifferenceDenisAfterIncreasing + " рублей");
+                " рублей в месяц. Годовой доход вырос на " + annualIncomeDifferenceDenisAfterIncreasing + " рублей!");
         System.out.println("Кристина теперь получает " + monthlyIncomeCristinaIncrease10Percent +
-                " рублей в месяц. Годовой доход вырос на " + annualIncomeDifferenceCristinaAfterIncreasing + " рублей");
+                " рублей в месяц. Годовой доход вырос на " + annualIncomeDifferenceCristinaAfterIncreasing + " рублей!");
     }
 }
